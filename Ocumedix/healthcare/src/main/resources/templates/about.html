@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Ocumedix Healthcare</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+        font-family:'Poppins',sans-serif;
+        background:#f8fafc;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <div class="flex items-center space-x-3">
+
+            <img th:src="@{/images/icon.png}" class="h-12 w-auto">
+
+            <h1 class="text-2xl font-bold text-blue-600">
+                OCUMEDIX HEALTHCARE
+            </h1>
+
+        </div>
+
+        <div class="hidden md:flex space-x-8 font-medium">
+
+            <a href="/" class="hover:text-blue-600">Home</a>
+            <a href="/about" class="text-blue-600 font-semibold">About</a>
+            <a href="/products" class="hover:text-blue-600">Products</a>
+            <a href="/contact" class="hover:text-blue-600">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="bg-blue-600 text-white py-20 text-center">
+
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">
+        About Ocumedix Healthcare
+    </h1>
+
+    <p class="max-w-2xl mx-auto text-lg">
+        Committed to delivering high-quality pharmaceutical solutions that improve patient care and healthcare outcomes.
+    </p>
+
+</section>
+
+
+
+<!-- COMPANY INTRODUCTION -->
+
+<section class="py-16 sm:py-20">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <img src="/images/lab.jpg"
+             class="rounded-xl shadow-lg">
+
+        <div>
+
+            <h2 class="text-3xl font-bold mb-6">
+                Who We Are
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Ocumedix Healthcare Pvt. Ltd. is a pharmaceutical company focused on developing high-quality ophthalmic and ENT medicines designed to improve patient health and treatment outcomes.
+            </p>
+
+            <p class="text-gray-600 mb-4">
+                Our team works with experienced healthcare professionals and modern manufacturing partners to ensure every product meets strict quality and safety standards.
+            </p>
+
+            <p class="text-gray-600">
+                Through innovation, research, and dedication to healthcare excellence, we aim to provide reliable pharmaceutical solutions that support better patient care.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <h2 class="text-4xl font-bold text-blue-600 mb-6">
+                Our Products
+            </h2>
+
+            <p class="text-gray-600 mb-6">
+                OCUMEDIX Healthcare provides high quality ophthalmic
+                solutions including eye drops and tablets designed to
+                improve eye health and patient care.
+            </p>
+
+            <a href="/products"
+               class="bg-blue-600 text-white px-6 py-3 rounded-lg">
+                Explore Products
+            </a>
+        </div>
+
+        <div>
+            <img src="/images/products/products-info.jpeg"
+                 class="rounded-xl shadow-lg">
+        </div>
+
+    </div>
+</section>
+
+
+<!-- DIRECTOR SECTION -->
+
+<section class="py-20 bg-blue-50">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Director Image -->
+        <div class="flex justify-center">
+            <img th:src="@{/images/director.jpg}"
+                 alt="Director"
+                 class="rounded-xl shadow-lg w-80">
+        </div>
+
+        <!-- Director Info -->
+        <div>
+
+            <h2 class="text-3xl font-bold mb-4">
+                Director
+            </h2>
+
+            <h3 class="text-xl font-semibold text-blue-600 mb-4">
+                Anil Salunke
+            </h3>
+
+            <p class="text-gray-600 mb-4">
+                Anil Salunke leads our company with a vision to transform healthcare through innovation and high-quality pharmaceutical products. With more than 20 years of experience in the pharmaceutical industry, he has played a key role in developing strategies that improve patient care and expand access to life-saving medicines.
+            <p class="text-gray-600 mb-4">
+                Our journey began with a simple vision — to make healthcare more accessible, reliable, and innovative. As a startup, we are driven by passion, dedication, and a strong commitment to improving patient care through quality pharmaceutical solutions.
+            </p>
+
+            <p class="text-gray-600">
+                We believe that healthcare should be built on trust, innovation, and responsibility. Our goal is to continuously develop and deliver safe and effective healthcare products that support healthier communities.This is just the beginning of our journey, and we are committed to growing with the same values that started our mission.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- MISSION & VISION -->
+
+<section class="bg-gray-100 py-20">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+
+            <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+                Our Mission
+            </h3>
+
+            <p class="text-gray-600">
+                Our goal is to promote ethical pharmaceutical practices and provide safe, reliable, and high-quality healthcare solutions. We strive to ensure that every product we deliver supports patient safety, treatment effectiveness, and trust within the healthcare community. We are committed to building a healthcare ecosystem where medicines are developed and delivered responsibly, helping healthcare professionals provide better treatment and care for patients.            </p>
+            </p>
+
+        </div>
+
+
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+
+            <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+                Our Vision
+            </h3>
+
+            <p class="text-gray-600">
+                Our vision is to become a trusted healthcare organization recognized for ethical values, high-quality pharmaceutical products, and a strong commitment to patient safety. We aim to contribute to a healthier future by promoting responsible healthcare practices and innovative medical solutions. Through continuous improvement and dedication to quality, we aspire to make healthcare safer, more reliable, and accessible for communities.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- OUR SPECIALIZATION -->
+
+<section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-center mb-14">
+            Our Expertise
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Ophthalmic Medicines
+                </h3>
+
+                <p class="text-gray-600">
+                    Advanced eye care solutions designed to treat infections, inflammation, and dryness while improving overall eye health.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+
+                <h3 class="text-xl font-semibold mb-3">
+                    ENT Solutions
+                </h3>
+
+                <p class="text-gray-600">
+                    Specialized ear, nose, and throat medications formulated to provide effective relief from infections and inflammation.
+                </p>
+
+            </div>
+
+
+            <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+
+                <h3 class="text-xl font-semibold mb-3">
+                    Dermatology Care
+                </h3>
+
+                <p class="text-gray-600">
+                    Skin care treatments developed to support healthy skin and provide effective dermatological solutions.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- QUALITY SECTION -->
+
+<section class="bg-blue-600 text-white py-20 text-center">
+
+    <div class="max-w-3xl mx-auto px-6">
+
+        <h2 class="text-3xl font-bold mb-6">
+            Commitment to Quality
+        </h2>
+
+        <p class="text-lg">
+            At Ocumedix Healthcare, quality is our top priority. Every product undergoes strict quality checks and follows pharmaceutical standards to ensure safety, reliability, and effectiveness.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-white py-8 text-center">
+
+    <p>© 2026 Ocumedix Healthcare Pvt Ltd</p>
+
+</footer>
+
+
+</body>
+</html>
